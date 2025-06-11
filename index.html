@@ -95,7 +95,7 @@
 
         <!-- Header -->
         <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Análisis y Predicción de Emisiones de $CO_2$</h1>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Análisis y Predicción de Emisiones de CO2</h1>
             <p class="mt-4 text-lg text-gray-600">Una inmersión profunda en los datos que definen la huella de carbono vehicular.</p>
         </header>
 
@@ -103,7 +103,7 @@
         <section class="mb-16">
             <div class="stat-card shadow-xl">
                 <div class="stat-number">250 g/km</div>
-                <div class="stat-label">Emisión promedio de $CO_2$ por vehículo en nuestro dataset. Comprender qué impulsa este número es el primer paso para reducirlo.</div>
+                <div class="stat-label">Emisión promedio de CO2 por vehículo en nuestro dataset. Comprender qué impulsa este número es el primer paso para reducirlo.</div>
             </div>
         </section>
 
@@ -130,7 +130,7 @@
 
         <!-- Section 3: Impulsores Clave -->
         <section class="mb-16">
-            <h2 class="text-3xl font-bold text-center mb-8">¿Qué Impulsa las Emisiones de $CO_2$?</h2>
+            <h2 class="text-3xl font-bold text-center mb-8">¿Qué Impulsa las Emisiones de CO2?</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold mb-2 text-center">Tamaño del Motor vs. Emisiones</h3>
@@ -138,7 +138,7 @@
                     <div class="chart-container h-80 md:h-96">
                         <canvas id="engineSizeChart"></canvas>
                     </div>
-                    <p class="text-center mt-4 text-gray-600">Existe una clara y fuerte relación lineal positiva: a mayor tamaño del motor, mayores son las emisiones de $CO_2$.</p>
+                    <p class="text-center mt-4 text-gray-600">Existe una clara y fuerte relación lineal positiva: a mayor tamaño del motor, mayores son las emisiones de CO2.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold mb-2 text-center">Consumo de Combustible vs. Emisiones</h3>
@@ -146,7 +146,7 @@
                     <div class="chart-container h-80 md:h-96">
                         <canvas id="fuelConsumptionChart"></canvas>
                     </div>
-                    <p class="text-center mt-4 text-gray-600">El consumo de combustible es el predictor más fuerte. Más combustible quemado se traduce directamente en más $CO_2$ liberado.</p>
+                    <p class="text-center mt-4 text-gray-600">El consumo de combustible es el predictor más fuerte. Más combustible quemado se traduce directamente en más CO2 liberado.</p>
                 </div>
             </div>
         </section>
@@ -163,7 +163,7 @@
                     <div class="flowchart-arrow">&rarr;</div>
                     <div class="flowchart-step shadow">Regresión Lineal</div>
                     <div class="flowchart-arrow">&rarr;</div>
-                    <div class="flowchart-step bg-[#06D6A0] text-gray-900 shadow">Predicción de $CO_2$</div>
+                    <div class="flowchart-step bg-[#06D6A0] text-gray-900 shadow">Predicción de CO2</div>
                 </div>
                 <p class="text-center mt-6 text-gray-600">Utilizamos un pipeline robusto para transformar los datos y entrenar un modelo de Regresión Lineal, asegurando un proceso reproducible y eficiente.</p>
                 
@@ -172,9 +172,9 @@
                         <h3 class="text-2xl font-semibold mb-4">Precisión del Modelo</h3>
                         <div class="inline-block bg-[#06D6A0] text-[#073B4C] rounded-full px-8 py-6 shadow-lg">
                            <div class="text-5xl font-bold">0.9895</div>
-                           <div class="text-xl font-semibold mt-1">$R^2$ Score (en prueba)</div>
+                           <div class="text-xl font-semibold mt-1">R Score (en prueba)</div>
                         </div>
-                        <p class="mt-6 text-gray-600 max-w-sm mx-auto">Nuestro modelo explica casi el 99% de la variabilidad en las emisiones de $CO_2$, demostrando una capacidad de predicción excepcional en datos no vistos.</p>
+                        <p class="mt-6 text-gray-600 max-w-sm mx-auto">Nuestro modelo explica casi el 99% de la variabilidad en las emisiones de CO2, demostrando una capacidad de predicción excepcional en datos no vistos.</p>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-4 text-center">Predicciones vs. Valores Reales</h3>
@@ -189,24 +189,20 @@
 
         <!-- Section 5: Conclusiones -->
         <section>
-            <h2 class="text-3xl font-bold text-center mb-8">Conclusiones Clave y Próximos Pasos</h2>
+            <h2 class="text-3xl font-bold text-center mb-8">Conclusiones Clave </h2>
             <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
                 <ul class="space-y-4">
                     <li class="flex items-start">
                         <span class="text-2xl mr-4 text-[#118AB2]">⚙️</span>
-                        <div><strong class="font-semibold">Factores Determinantes:</strong> El tamaño del motor, los cilindros y, sobre todo, el consumo de combustible, son los predictores más fiables de las emisiones de $CO_2$.</div>
+                        <div><strong class="font-semibold">Factores Determinantes:</strong> El tamaño del motor, los cilindros y, sobre todo, el consumo de combustible, son los predictores más fiables de las emisiones de CO2.</div>
                     </li>
                     <li class="flex items-start">
                         <span class="text-2xl mr-4 text-[#06D6A0]">🎯</span>
-                        <div><strong class="font-semibold">Modelo Exitoso:</strong> Hemos desarrollado un modelo de Regresión Lineal robusto y altamente preciso ($R^2=0.9895$), capaz de generalizar excelentemente a nuevos datos.</div>
+                        <div><strong class="font-semibold">Modelo Exitoso:</strong> Hemos desarrollado un modelo de Regresión Lineal robusto y altamente preciso (R2^2=0.9895$), capaz de generalizar excelentemente a nuevos datos.</div>
                     </li>
                     <li class="flex items-start">
                         <span class="text-2xl mr-4 text-[#FFD166]">🚗</span>
                         <div><strong class="font-semibold">Impacto de la Categoría:</strong> La clase de vehículo (ej. SUV vs. Compacto) y el tipo de combustible (ej. Diésel vs. Gasolina) también juegan un papel crucial en la huella de carbono.</div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-2xl mr-4 text-[#FF6B6B]">🚀</span>
-                        <div><strong class="font-semibold">Futuras Mejoras:</strong> Los próximos pasos podrían incluir la exploración de modelos no lineales (como Random Forest) y la ingeniería de características más avanzadas para capturar relaciones más complejas.</div>
                     </li>
                 </ul>
             </div>
